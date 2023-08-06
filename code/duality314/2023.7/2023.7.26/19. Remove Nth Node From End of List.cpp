@@ -16,6 +16,7 @@ public:
         vHead->next = head;
         ListNode *fast = vHead;
         ListNode *slow = vHead;
+        // 双指针 ， 快慢指针 ，快指针走n+1 ，之后一起走
         while (n-- && fast != nullptr)
         {
             fast = fast->next;
